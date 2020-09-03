@@ -20,7 +20,8 @@ import pythonOsWalk
 pythonOsWalk.makeTree("C:\\root folder")
 Output: (View output in RAW mode)
 C:
-|-root folder.
+|-root folder
+
 |--:FILES:0
 |--first_one
 |---:FILES:0
