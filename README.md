@@ -15,9 +15,13 @@ Attributes supported by makeTree:
 Taking line_sep as "\t" and line_start as "" is also a good choice.
 
 E.g.
+
 Script:
+
 import pythonOsWalk
+
 pythonOsWalk.makeTree("C:\\root folder")
+
 Output: (Note: Each line in output contains extra new line for display purpose in this text only. Actual code doesn't add extra new line character)
 
 C:
