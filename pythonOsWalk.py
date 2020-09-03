@@ -9,19 +9,19 @@ def dictNest(path,d,files):
             d[path[0]]={}
         d[path[0]][':FILES:'+str(len(files))]=files
 
-def printDict(d,n):
+def printDict(d,n,line_sep,line_start):
     for i in d:
         try:
-            print("%s%s"%('\t'*n,i))
-            printDict(d[i],n+1)
+            print("%s%s%s"%((line_start if n else ""),line_sep*n,i))
+            printDict(d[i],n+1,line_sep,line_start)
         except:
             pass
-def makeTree(path):
+def makeTree(path,dir_sep='\\',line_sep='-',line_start='|'):
     a=os.walk(path)
     d={}
     for root,dirs,files in a:
-            dictNest(root.split('\\'),d,files)
-    printDict(d,0)
+            dictNest(root.split(dir_sep),d,files)
+    printDict(d,0,line_sep,line_start)
 
 
 if __name__=="__main__":
