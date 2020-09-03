@@ -18,7 +18,7 @@ E.g.
 Script:
 import pythonOsWalk
 pythonOsWalk.makeTree("C:\\root folder")
-Output: (View output in RAW mode)
+Output: (Note: Each line in output contains extra new line for display purpose in this text only. Actual code doesn't add extra new line character)
 
 C:
 
