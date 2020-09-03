@@ -18,7 +18,7 @@ E.g.
 Script:
 import pythonOsWalk
 pythonOsWalk.makeTree("C:\\root folder")
-Output:
+Output: (View output in RAW mode)
 C:
 |-root folder
 |--:FILES:0
